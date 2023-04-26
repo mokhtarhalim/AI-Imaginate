@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import { logo } from "./assets"
-import Home from "./pages/home/Home"
-import CreatePost from "./pages/createPost/CreatePost"
+import Home from "./pages/Home"
+import CreatePost from "./pages/CreatePost"
 
 function App() {
   return (
@@ -26,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default App 
