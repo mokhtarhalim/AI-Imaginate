@@ -11,7 +11,7 @@ export default function CreatePost() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
     name: '',
-    promt: '',
+    prompt: '',
     photo: ''
   });
 
@@ -23,7 +23,14 @@ export default function CreatePost() {
   }
 
   const generateImg = () => {
-
+    if(form.prompt){
+      try {
+        setGeneratingImg(true)
+        
+      } catch (error) {
+        console.log(error)
+      }
+    }
   }
 
   const handleChange = (e) => {
@@ -58,7 +65,7 @@ export default function CreatePost() {
             type="text"
             name="prompt"
             placeholder="an oil painting by Matisse of a humanoid robot playing chess"
-            value={form.promt}
+            value={form.prompt}
             handleChange={handleChange}
             isSupriseMe
             handleSupriseMe={handleSupriseMe}
