@@ -16,7 +16,6 @@ const RenderCards = (data, title) => {
 
 export default function Home() {
 
-
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
   const [searchText, setSearchText] = useState("abc")
