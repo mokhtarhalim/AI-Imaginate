@@ -77,7 +77,7 @@ export default function CreatePost() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSupriseMe = () => {
+  const handleSurpriseMe = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
     setForm({ ...form, prompt: randomPrompt })
   }
@@ -107,8 +107,8 @@ export default function CreatePost() {
             placeholder="an oil painting by Matisse of a humanoid robot playing chess"
             value={form.prompt}
             handleChange={handleChange}
-            isSupriseMe
-            handleSupriseMe={handleSupriseMe}
+            isSurpriseMe
+            handleSurpriseMe={handleSurpriseMe}
           />
 
           <div className='relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center'>
